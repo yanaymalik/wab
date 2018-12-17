@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        button{
+            background-color:white;
+            font-family:Arial;
+            font-size:medium;
+        }
+    </style>
+</head>
+<body>
+    <p id="str">0</p>
+    <button onclick="btn_click1();" id="btn">1</button>
+    <button onclick="btn_click2();" id="btn">2</button>
+    <button onclick="btn_click3();" id="btn">3</button><br />
+    <button onclick="btn_click4();" id="btn">4</button>
+    <button onclick="btn_click5();" id="btn">5</button>
+    <button onclick="btn_click6();" id="btn">6</button><br />
+    <button onclick="btn_click7();" id="btn">7</button>
+    <button onclick="btn_click8();" id="btn">8</button>
+    <button onclick="btn_click9();" id="btn">9</button>
+    <script>
+        var num = 0;
+        function btn_click()
+        {
+            num++;
+            document.getElementById("str").innerText = num;
+        }
+        function btn_click2() {
+            num++2;
+            document.getElementById("str").innerText = num;
+        }
+    </script>
+</body>
+</html >

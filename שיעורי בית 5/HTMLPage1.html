@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <button onclick="hide()">submit</button>
+    <img id="img1" src="https://cdn.pixabay.com/photo/2018/01/14/23/12/nature-3082832__340.jpg" />
+    <script>
+        var show = 2;
+        function hide() {
+            while (1) {
+                if (show % 2 == 0) {
+                    document.getElementById("img1").style.display = 'none';
+                    show += 1;
+                }
+                else {
+                    document.getElementById("img1").style.display = 'inline';
+                    show += 1;
+                }
+            }
+        }
+        
+    </script>
+</body>
+</html>

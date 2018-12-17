@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        div{
+            width:200px;
+            height:200px;
+            background-color:yellow;
+            border:2px solid black;
+            margin:10px;
+        }
+    </style>
+</head>
+<body>
+   <button onclick="yanay()">add</button>
+    <script>
+        var i = 0;
+        function yanay() {
+            for (var j = 0; j < 3; j++) {
+                var elem = document.createElement('div');
+                elem.innerText = i;
+                elem.id = "id" + i;
+                if (i % 2 == 0) {
+
+                    elem.style.backgroundColor = "red";
+                }
+                else {
+                    elem.style.backgroundColor = "blue";
+                }
+                i++
+                document.body.appendChild(elem);
+            }
+        }
+    </script>
+
+</body>
+</html>
